@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+BookFlight
+{% endblock title %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="text" name="firstname" placeholder="FirstName">
+    <input type="text" name="lastname" placeholder="LastName">
+    <input type="submit">
+</form>
+
+{% endblock content %}
