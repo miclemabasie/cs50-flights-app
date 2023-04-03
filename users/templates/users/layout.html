@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+        .container {
+            max-width: 800px;
+            align-items: center;
+            margin: auto;
+            background-color: aqua;
+            padding: 100px;
+            border-radius: 5%;
+        }
+
+        .login-form {
+            align-items: center;
+            margin-right: auto;
+            width: 500px;
+        }
+
+        .form-item {
+            margin-bottom: 20px;
+            width: 500px;
+        }
+
+        input {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>{{message}}</p>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+
+</html>

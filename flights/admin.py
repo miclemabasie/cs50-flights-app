@@ -22,3 +22,4 @@ class AirportAdmin(admin.ModelAdmin):
 class PassengerAdmin(admin.ModelAdmin):
     list_display = ["first", "last"]
     list_display_links = ["first", "last"]
+    filter_horizontal = ["flights"]
